@@ -4396,6 +4396,11 @@ body.nav-on-screen .lr-nav-layer {
     background-size: contain;
     z-index: 5
 }
+.lr-headsofstate p
+{
+    position: relative;
+    z-index: 6;
+}
 
 .lr-relations {
     padding: 150px 0 175px
@@ -4899,7 +4904,6 @@ body.nav-on-screen .lr-nav-layer {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-bottom: 90px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 1060px;
@@ -4911,7 +4915,24 @@ body.nav-on-screen .lr-nav-layer {
     font-weight: 300;
     text-align: center;
     font-size: 26px;
-    line-height: 1.8
+    line-height: 1.8;
+
+    padding-bottom: 51px;
+    position: relative;
+}
+.lr-slider .slider-total p:after
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background: #ca393e;
+    width: 320px;
+    max-width: 90%;
+
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 1800px) {
@@ -5240,6 +5261,15 @@ body.nav-on-screen .lr-nav-layer {
 
     .lr-nav-layer .nav-layer-content .nav-landing {
         width: 60%
+    }
+
+    .lr-slider .slider-total p
+    {
+        padding-bottom: 0;
+    }
+    .lr-slider .slider-total p:after
+    {
+        display: none;
     }
 }
 
