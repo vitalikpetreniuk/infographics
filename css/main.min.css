@@ -3206,13 +3206,6 @@ html {
     color: #666
 }
 
-::-moz-selection {
-    color: #fff
-}
-
-::selection {
-    color: #fff
-}
 
 body {
     font-size: 16px;
@@ -3842,6 +3835,12 @@ body.nav-on-screen .lr-nav-layer {
 .lr-purple h2 {
     margin-bottom: 40px;
     text-align: center
+}
+.lr-origin h2 {
+    font-family: "RotisSerifW1G-Bold", sans-serif;
+    font-size: 40px;
+    text-transform: none;
+    letter-spacing: 0;
 }
 
 .lr-purple .lr-content {
@@ -4935,6 +4934,13 @@ body.nav-on-screen .lr-nav-layer {
     transform: translateX(-50%);
 }
 
+@media only screen and (min-width: 1441px)
+{
+    .lr-intro .intro-bg img
+    {
+        height: 100vh;
+    }
+}
 @media only screen and (max-width: 1800px) {
     p {
         font-size: 16px;
@@ -5066,6 +5072,10 @@ body.nav-on-screen .lr-nav-layer {
         margin-top: 15vh;
         margin-bottom: 0;
         top: 15vh
+    }
+    .lr-origin h2
+    {
+        font-size: 30px;
     }
 }
 
@@ -5732,5 +5742,16 @@ body.nav-on-screen .lr-nav-layer {
 
     .lr-nav-layer .nav-layer-content .nav-landing ul li a {
         font-size: 14px
+    }
+
+    .lr-origin h2
+    {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .lr-origin h2
+    {
+        font-size: 32px;
     }
 }
